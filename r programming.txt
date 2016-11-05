@@ -1,0 +1,209 @@
+
+
+untitled 8
+
+city
+type
+EdittedContracts.csv
+install.packages(car)
+require(car)
+editted[1:5,]
+require(car)
+sp(Contract.Type ~ State | City,
+   data = EdittedContracts.csv,
+   xlab="Sepal Width",
+   ylab = "Sepal Length",
+   main = "Iris Data",
+   labels= row.names(Editted)   )
+
+editted[1:5,]
+sp(Contract.Type ~ State | City,
+   data = editted,
+   xlab="Sepal Width",
+   ylab = "Sepal Length",
+   main = "Iris Data",
+   labels= row.names(editted)   )
+
+sp(Contract.Type ~ State ,
+   data = editted,
+   xlab="Sepal Width",
+   ylab = "Sepal Length",
+   main = "Iris Data",
+   labels= row.names(editted)   )
+
+contracts <- read.csv("C:/Users/kunal/Desktop/r data/List.csv", header = TRUE)
+?contracts
+?help
+
+contracts[,2]<-NULL
+
+sp(Vendor.Name ~ State | City,
+   data = editted,
+   xlab="Sepal Width",
+   ylab = "Sepal Length",
+   main = "Iris Data",
+   labels= row.names(editted)   )
+
+untitled 7
+
+memory.size(TRUE)
+memory.size(max = TRUE)
+memory.limit(size = )
+memory.size(TRUE)
+
+
+editted <- read.csv("C:/Users/kunal/Desktop/r data/EdittedContracts.csv", header = TRUE)
+editted[,1]<-NULL #remove
+editted[,2]<-NULL
+editted[,2]<-NULL
+editted[,2]<-NULL
+
+editted[1:1]
+d<-dist(editted)
+c<-hclust(d)
+plot(c)
+
+untitled 6
+
+?lynx
+data(lynx)
+hist(city)
+h<-hist(city,
+        breaks = 11,
+        freq=FALSE,
+        col = "this")
+
+untitled 5
+
+data(EdittedContracts.csv)
+city <- table(EdittedContracts.csv$State)
+city
+pie(city)
+?pie
+pie(city[order(city, decreasing = TRUE)],
+    init.angle = 90,
+    clockwise = TRUE,
+    col = c("seashell","cadetblue2","lightpink","lightcyan","plum1","papayawhip"),
+    main = "pie chart of city")
+barplot(city, main="city",col=colors
+        
+
+untitled 4
+
+
+data(EdittedContracts.csv)
+plot(EdittedContracts.csv$State)
+city <- table(EdittedContracts.csv$State)
+STATE
+barplot(STATE)
+barplot(STATE[order(STATE, decreasing=FALSE)])
+par(oma=c(1,1,1,1))
+par(mar=c(4,5,2,1))
+barplot(STATE[order(STATE)],
+        horiz = FALSE, 
+        las =1,
+        col =c("beige","blanchedalmond","bisque1","bisque2","bisque3","bisque4"),
+        border = NA,
+        main="contract based on state\nin
+        type Dataset",
+        xlab ="Number of state"
+)
+untitled 3
+
+data(EdittedContracts.csv)
+plot(EdittedContracts.csv$State)
+STATE <- table(EdittedContracts.csv$State)
+STATE
+barplot(STATE)
+barplot(STATE[order(STATE, decreasing=FALSE)])
+par(oma=c(1,1,1,1))
+par(mar=c(4,5,2,1))
+barplot(STATE[order(STATE)],
+        horiz = FALSE, 
+        las =1,
+        col =c("beige","blanchedalmond","bisque1","bisque2","bisque3","bisque4"),
+        border = NA,
+        main="contract based on state\nin
+        type Dataset",
+        xlab ="Number of state"
+)
+
+untitled 2
+
+Contracts.csv <- read.csv("C:/Users/kunal/Desktop/r data/Contracts.csv", header = TRUE)
+str(Contracts.csv)
+Contracts.csv <- read.csv("C:/Users/kunal/Desktop/r data/Contracts.csv", header = TRUE)
+str(Contracts.csv)
+Contracts.csv
+barplot(Contracts.csv$)
+plot(Contracts.csv)
+margin.table(Contracts.csv,2)
+hist(Contracts.csv)
+boxplot.default(Contracts.csv)
+boxplot.stats(contrasts(2))
+require("psych")
+d <- describe(Contracts.csv[c(1,4,7)])
+d[, c(3,4)]
+?Contracts.csv
+margin.table(Contracts.csv, 2)#contract type
+margin.table()
+table(contract.Type)
+table(City)
+table(Contract.Type)
+?table()
+margin.table()
+require("datasets")
+data(Contracts.csv)
+plot(Contracts.csv$Contract.Type)
+type <- table(Contracts.csv$Contract.Type)
+type
+barplot(type)
+barplot(type[order(type, decreasing=TRUE)])
+par(oma=c(1,1,1,1))
+par(mar=c(4,5,2,1))
+barplot(type[order(type)],
+        horiz = FALSE, 
+        las =1,
+        col =c("beige","blanchedalmond","bisque1","bisque2","bisque3","bisque4"),
+        border = NA,
+        main="Total contract type\nin
+        type Dataset",
+        xlab ="Number of items"
+)
+
+untitled 1
+
+EdittedContracts.csv <- read.csv("C:/Users/kunal/Desktop/r data/EdittedContracts.csv", header = TRUE)
+str(EdittedContracts.csv)
+barplot(EdittedContracts.csv$Contract.Type)
+plot(EdittedContracts.csv)
+margin.table(EdittedContracts.csv,2)
+hist(EdittedContracts.csv)
+boxplot.default(EdittedContracts.csv)
+boxplot.stats(EdittedContracts.csv(2))
+require("psych")
+d <- describe(EdittedContracts.csv[c(1,4,7)])
+margin.table(EdittedContracts.csv, 2)#contract type
+margin.table()
+table(contract.Type)
+table(City)
+table(Contract.Type)
+margin.table()
+require("datasets")
+data(EdittedContracts.csv)
+plot(EdittedContracts.csv$Contract.Type)
+type <- table(EdittedContracts.csv$Contract.Type)
+type
+barplot(type)
+barplot(type[order(type, decreasing=FALSE)])
+par(oma=c(1,1,1,1))
+par(mar=c(4,5,2,1))
+barplot(type[order(type)],
+        horiz = FALSE, 
+        las =1,
+        col =c("beige","blanchedalmond","bisque1","bisque2","bisque3","bisque4"),
+        border = NA,
+        main="Total contract type\nin
+        type Dataset",
+        xlab ="Number of items"
+)
